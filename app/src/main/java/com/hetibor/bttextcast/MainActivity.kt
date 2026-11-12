@@ -50,7 +50,7 @@ class MainActivity : Activity() {
 
         titleInput = EditText(this).apply {
             hint = "Type a message"
-            singleLine = true
+//            singleLine = true // does not work anymore
             imeOptions = EditorInfo.IME_ACTION_DONE
             setText(savedInstanceState?.getString(KEY_TITLE).orEmpty())
         }
